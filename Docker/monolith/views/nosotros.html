@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDress Store</title>
+    <link rel="stylesheet" href="css/normalize.css"> <!--Para duplicar (SHIFT + ALT + flecha hacia abajo)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+
+<body>
+    <!-- Home o lleva a pagina principal -->
+    <!-- Formato BEM -->
+    <header class="header">
+        <a href="principal.html">
+            <img class="header__logo" src="img/logo.png" alt="logoTipo">
+        </a>
+    </header> <!--BLOQUE 1-->
+
+    <nav class="navegacion">
+        <!-- a*2 = 2 nav´s  -->
+        <a class="navegacion__enlace" href="principal.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+        <a class="navegacion__enlace" href="DB.ejs">Base de datos</a>
+    </nav> <!--BLOQUE 2-->
+
+    <main class="contenedor">
+        <h1>Nosotros</h1>
+        <div class="nosotros">
+            <div class="nosotros__contenido">
+                <p>Cras ultrices quam vel metus blandit, id efficitur enim lacinia. Vestibulum vel dui nec est tristique
+                    fringilla. Suspendisse sit amet semper dolor. Cras posuere quam id pharetra lobortis. Praesent
+                    dignissim, eros maximus feugiat luctus, turpis erat consectetur ante, malesuada lacinia lorem arcu
+                    sit amet purus. Maecenas tortor mauris, interdum non aliquam id, porta a massa. Nulla id rutrum
+                    metus. Phasellus eleifend velit mi, sit amet cursus diam dictum at. Aenean fringilla venenatis nisi
+                    vitae fringilla.</p>
+
+                <p>Etiam viverra dolor quis tellus euismod, eu tincidunt diam luctus. Mauris nec turpis et nunc bibendum
+                    porta eget sed quam. Duis luctus enim justo, nec mollis velit feugiat ac. Sed sagittis fermentum
+                    massa, non pellentesque neque. Vivamus porttitor, nisi sed ullamcorper lacinia, est dolor rhoncus
+                    elit, eget lobortis odio ex eget enim. </p>
+            </div>
+
+            <img class="nosotros__imagen" src="img/nosotros.jpg" alt="imagen nosotros">
+        </div>
+    </main>
+
+    <section class="contenedor comprar">
+        <h2 class="comprar__titulo">¿Por que comprar con nosotros?</h2>
+
+        <div class="bloques">
+            <div class="bloque">
+                <image class="bloque__imagen" src="img/icono_1.png" alt="porque comprar">
+                <h3 class="bloque__titulo">El Mejor Precio</h3>
+                <p>Vivamus porttitor, nisi sed ullamcorper lacinia, est dolor rhoncus
+                    elit, eget lobortis odio ex eget enim</p>
+            </div> <!--BLOQUE-->
+
+            <div class="bloque">
+                <image class="bloque__imagen" src="img/icono_2.png" alt="porque comprar">
+                <h3 class="bloque__titulo">Para Devs</h3>
+                <p>Vivamus porttitor, nisi sed ullamcorper lacinia, est dolor rhoncus
+                    elit, eget lobortis odio ex eget enim</p>
+            </div> <!--BLOQUE-->
+
+            <div class="bloque">
+                <image class="bloque__imagen" src="img/icono_3.png" alt="porque comprar">
+                <h3 class="bloque__titulo">Envio Gratis</h3>
+                <p>Vivamus porttitor, nisi sed ullamcorper lacinia, est dolor rhoncus
+                    elit, eget lobortis odio ex eget enim</p>
+            </div> <!--BLOQUE-->
+
+            <div class="bloque">
+                <image class="bloque__imagen" src="img/icono_4.png" alt="porque comprar">
+                <h3 class="bloque__titulo">La Mejor Calidad</h3>
+                <p>Vivamus porttitor, nisi sed ullamcorper lacinia, est dolor rhoncus
+                    elit, eget lobortis odio ex eget enim</p>
+            </div> <!--BLOQUE-->
+
+        </div><!--BLOQUESS-->
+    </section>
+
+    <footer class="footer">
+        <p class="footer__texto">DevDress - Todos los derechos reservados 2023.</p>
+    </footer>
+
+</body>
+
+</html>

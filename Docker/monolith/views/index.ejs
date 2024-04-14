@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    <h1>Welcome to my monolithic</h1>
+
+    <ul>
+        <% camisas.forEach(camisas = { %>
+            <li><strong>Title:</strong> <%= camisas.title %>, <strong>Talla:</strong><%= camisas.talla %>, <strong>Costo:</strong> <%= camisas.costo %> </li>
+        <% }) %>
+    </ul>
+
+    <script>
+        var camisas = <%- JSON.stringify(camisas) %>
+        var dataMicroservice = <%- JSON.stringify(data) %>
+
+        console.log(camisas)
+        console.log(dataMicroservice)
+    </script>
+</body>
+</html>
